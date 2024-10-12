@@ -21,7 +21,7 @@ def spawn_and_publish(context, xacro_file: LaunchConfiguration):
         arguments=['-z', '0.05',
                 '-unpause',
                 '-topic', 'robot_description',
-                '-entity',  model['robot_description_xml']],
+                '-entity',  'my_robot'],
     )
     spawn_entity_action.execute(context)
 
